@@ -1,4 +1,11 @@
-header
+body
+{
+    font-family: 'Segoe UI';
+    margin: 10px;
+    padding: 20px;
+}
+
+h1
 {
     height: 100px;
     padding: 10px;
@@ -10,9 +17,17 @@ footer
 {
     height: 150px;
     padding: 20px;
+    font-size:50px;
     background-color: #193968;
     color: white;
+    text-align: center;
     border-top: solid white;
     border: 1px;
 }
 
+.container{
+    display: flex;
+    margin: 10px;
+    justify-content:  space-around;
+    gap: 20px;
+}
