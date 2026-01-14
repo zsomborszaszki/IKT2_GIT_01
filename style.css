@@ -3,17 +3,19 @@ body
     font-family: 'Segoe UI';
     margin: 10px;
     padding: 20px;
+    background-color: white;
 }
 
-h1
+.header
 {
     height: 100px;
     padding: 10px;
     background-color: #3939c8;
     color: white;
+    grid-area: 1 / span 6;
 }
 
-footer
+.footer
 {
     height: 150px;
     padding: 20px;
@@ -25,9 +27,21 @@ footer
     border: 1px;
 }
 
+img{
+    width: auto;
+}
+
 .container{
     display: flex;
     margin: 10px;
     justify-content:  space-around;
     gap: 20px;
+    flex-flow: row wrap;
+}
+
+@media (min-width: 600px) {
+    .header {grid-area: 1 / span 6;}
+    article {grid-area: 2 / span 3;}
+    .container {grid-area: 2 / span 1;}
+    .footer {grid-area: 3 / span 2;}
 }
