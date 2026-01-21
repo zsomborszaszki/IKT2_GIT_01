@@ -26,3 +26,26 @@ IKT2 projektmunka
 | --- | --- | --- | --- |
 | ***** | ***** | ***** | ***** |
 
+
+### Kódpéldák:
+
+HTML - képek az oldalon:
+```
+<div class="container">
+    <img class="img-fluid" src="./git1.png" alt="">
+    <img class="img-fluid" src="./git2.png" alt="">
+    <img class="img-fluid" src="./git3.png" alt="">
+</div>
+```
+
+CSS - header:
+```
+.header
+{
+    height: 100px;
+    padding: 10px;
+    background-color: #3939c8;
+    color: white;
+    grid-area: 1 / span 6;
+}
+```
